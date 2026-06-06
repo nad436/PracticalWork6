@@ -3,12 +3,15 @@
 Valgrind (Memcheck) діє як динамічний емулятор процесора, аналізуючи готовий бінарний код «на льоту» всередині власної віртуальної машини. Він повністю підміняє системний алокатор і ретельно відстежує стан кожного байта. Як і ASan, Valgrind фіксує порушення безпосередньо в момент виконання memset, маркуючи дію як Invalid write. Головна відмінність у тому, що за замовчуванням він не перериває роботу програми, а лише сипле попередженнями в консоль, дозволяючи коду працювати далі, що допомагає побачити ланцюгову реакцію помилок.
 
 Стандартна поведінка (glibc allocator)
+
 <img width="963" height="240" alt="image" src="https://github.com/user-attachments/assets/6212eaea-0c27-4f58-9ede-18fd2e66a996" />
 
 Аналіз через Valgrind
+
 <img width="746" height="451" alt="image" src="https://github.com/user-attachments/assets/f96b7c99-cde8-469a-a621-889978a7aae8" />
 
 Аналіз через AddressSanitizer (ASan)
+
 <img width="1100" height="469" alt="image" src="https://github.com/user-attachments/assets/83fe0813-17b5-4e0f-b2ed-150cac2bdbe4" />
 <img width="1180" height="567" alt="image" src="https://github.com/user-attachments/assets/bfb96925-2513-492c-a2af-01c7077be66c" />
 
